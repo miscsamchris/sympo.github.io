@@ -5,12 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<style type="text/css">
 		
 		html, body {
 			margin: 0px;
 			padding: 0px;
+			position: relative;
 		}
 		.sections{
 			width: 100%;
@@ -32,16 +33,18 @@
 		ul li {
 			float: left;
 		}
-		ul li a {
+		#nobootstrap {
 			display: block;
 			color: lightgreen;
 			text-align: center;
 			padding: 20px 24px;
 			text-decoration: none;
 		}
-		ul li a:hover {
+
+		#nobootstrap:hover,#nobootstrap:focus {
 			background-color: lightgreen;
 			color: black;
+			text-decoration:none;
 		}
 		ul li:first-child{
 			float: left;
@@ -88,24 +91,44 @@
 			width: 100%;
 			min-height: 100vh;
 		}
+		.navigation{
+			opacity: 0.75;
+			cursor: none;
+		}
 
 		</style>
+		<script>
+$(document).ready(function(){
+  $('body').scrollspy({target: ".Navigation", offset: 50});   
+  $("#myNavbar a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+	    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+           window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
 	</head>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="index.html">Filler name</a></li>
-				<li><a href="#aboutsympo">About Filler name</a></li>
-				<li><a href="#aboutcse">About CSE</a></li>
-				<li><a href="#events">Events</a></li>
-				<li><a href="#workshops">Workshops</a></li>
-				<li><a href="#committee">Committee Members</a></li>
-				<li><a href="#contactus">Contact Us</a></li>
+	<body data-spy="scroll" data-target=".navigation" data-offset="20">
+		<nav class="navigation navbar-inverse">
+			<ul class="nav navbar-nav" id="myNavbar">
+				<li><a id="nobootstrap" href="#landingsection">Filler name</a></li>
+				<li><a id="nobootstrap" href="#aboutsympo">About Filler name</a></li>
+				<li><a id="nobootstrap" href="#aboutcse">About CSE</a></li>
+				<li><a  id="nobootstrap"href="#events">Events</a></li>
+				<li><a id="nobootstrap" href="#workshops">Workshops</a></li>
+				<li><a  id="nobootstrap"href="#committee">Committee Members</a></li>
+				<li><a  id="nobootstrap"href="#contactus">Contact Us</a></li>
 			</ul>
 		</nav>
 		<div id="landingsection" class="sections">
 			<section>
-				
+
 			</section>
 		</div>
 		<div id="aboutsympo" class="sections">

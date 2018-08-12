@@ -2,6 +2,10 @@
 <html>
 	<head>
 		<title>Filler name - CSE Symposium</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
 		<style type="text/css">
 		
 		html, body {
@@ -18,7 +22,7 @@
 			padding: 0;
 			overflow: hidden;
 			background-color: black;
-			font-size: 16px;
+			font-size: 2.13vh;
 			font-weight: 100;
 			position: fixed;
 			top: 0;
@@ -52,6 +56,8 @@
 			left: 0;
 			width: 100%;
 			padding:1%;
+			font-size: 2.13vh;
+			opacity: 0.6;
 		}
 		#events{
 			background: url(assets/images/eventsbackground.jpg) no-repeat center center fixed ;
@@ -61,11 +67,28 @@
 			background: url(assets/images/workshopbackground.jpg) no-repeat center center fixed;
 			background-size: cover;
 		}
+		#contactus{
+			background: url(assets/images/contactusbackground.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+		#aboutsympo{
+			background: url(assets/images/aboutusbackground.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+		#committee{
+			background: url(assets/images/committeemembersbackground.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+		#aboutcse{
+			background: url(assets/images/aboutcsekcgbackground.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
 		.innersection{
-				background: linear-gradient(135deg,rgba(87, 107, 0, 0.6) 0% , rgba(0, 10, 10, 0.6) 	80%);
+				background: linear-gradient(135deg,rgba(60, 107, 0, 0.6) 5% , rgba(0, 0, 0, 0.6) 	80%);
 			width: 100%;
 			min-height: 100vh;
 		}
+
 		</style>
 	</head>
 	<body>
@@ -73,10 +96,10 @@
 			<ul>
 				<li><a href="index.html">Filler name</a></li>
 				<li><a href="#aboutsympo">About Filler name</a></li>
-				<li><a href="#aboutcse">About Us</a></li>
+				<li><a href="#aboutcse">About CSE</a></li>
 				<li><a href="#events">Events</a></li>
 				<li><a href="#workshops">Workshops</a></li>
-				<li><a href="#comittee">Comittee Members</a></li>
+				<li><a href="#committee">Committee Members</a></li>
 				<li><a href="#contactus">Contact Us</a></li>
 			</ul>
 		</nav>
@@ -105,7 +128,7 @@
 				
 			</section>
 		</div>
-		<div id="comittee" class="sections">
+		<div id="committee" class="sections">
 			<section class="innersection">
 				
 			</section>
@@ -116,7 +139,7 @@
 			</section>
 		</div>
 		<footer class="footer">
-			made with Heart
+			Made by <span style="font-family: impact">The Lone Samurai</span>
 		</footer>
 	</body>
 </html>

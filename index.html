@@ -1,46 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Filler name - CSE Symposium</title>
-	<style type="text/css">
+	<head>
+		<title>Filler name - CSE Symposium</title>
+		<style type="text/css">
 		
-	</style>
-</head>
-<body>
-	<nav>
-		<ul>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-		</ul>
-	</nav>
-<div id="landingsection" class="sections">
-	
-</div>
-<div id="aboutsympo" class="sections">
-	
-</div>
-<div id="aboutcse" class="sections">
-	
-</div>
-<div id="events" class="sections">
-	
-</div>
-<div id="workshops" class="sections">
-	
-</div>
-<div id="comittee" class="sections">
-	
-</div>
-<div id="contactus" class="sections">
-	
-</div>
-	<footer>
-		
-	</footer>
-</body>
+		html, body {
+			margin: 0px;
+			padding: 0px;
+		}
+		.sections{
+			width: 100%;
+			min-height: 100vh;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: black;
+			font-size: 16px;
+			font-weight: 100;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		ul li {
+			float: left;
+		}
+		ul li a {
+			display: block;
+			color: lightgreen;
+			text-align: center;
+			padding: 20px 24px;
+			text-decoration: none;
+		}
+		ul li a:hover {
+			background-color: lightgreen;
+			color: black;
+		}
+		ul li:first-child{
+			float: left;
+			width: 42%;
+		}
+		.footer{
+			text-align:center;
+			background: black;
+			color: lightgreen;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding:1%;
+		}
+		#events{
+			background: url(assets/images/eventsbackground.jpg) no-repeat center center fixed ;
+			background-size: cover;
+		}
+		#workshops{
+			background: url(assets/images/workshopbackground.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+		.innersection{
+				background: linear-gradient(135deg,rgba(87, 107, 0, 0.6) 0% , rgba(0, 10, 10, 0.6) 	80%);
+			width: 100%;
+			min-height: 100vh;
+		}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html">Filler name</a></li>
+				<li><a href="#aboutsympo">About Filler name</a></li>
+				<li><a href="#aboutcse">About Us</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#workshops">Workshops</a></li>
+				<li><a href="#comittee">Comittee Members</a></li>
+				<li><a href="#contactus">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="landingsection" class="sections">
+			<section>
+				
+			</section>
+		</div>
+		<div id="aboutsympo" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<div id="aboutcse" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<div id="events" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<div id="workshops" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<div id="comittee" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<div id="contactus" class="sections">
+			<section class="innersection">
+				
+			</section>
+		</div>
+		<footer class="footer">
+			made with Heart
+		</footer>
+	</body>
 </html>
